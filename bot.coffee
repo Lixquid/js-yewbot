@@ -63,6 +63,9 @@ class YewBot
 		@irc.on "quit", ( who, reason ) ->
 			console.log "#{who} quit the server. Reason: #{reason ? "None"}"
 
+		# Suppress memory leak warning
+		@irc.setMaxListeners( 0 )
+
 	## Methods ##
 
 	loadPlugins: ->
