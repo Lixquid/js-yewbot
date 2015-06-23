@@ -9,7 +9,7 @@ module.exports = ( bot ) ->
 			bot.say( "#{from}: Activating Banter suppression" )
 		muted = true
 
-	bot.respond /^(don'?t be|stop being) quiet/i, ->
+	bot.respond /^(don'?t be|stop being) quiet/i, ( from ) ->
 		if muted
 			bot.say( "#{from}: Banter spooling up to maximum emission" )
 		else
