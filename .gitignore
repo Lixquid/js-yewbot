@@ -1,0 +1,6 @@
+# Bot Files
+store.db
+
+# Node
+npm-debug.log*
+node_modules/
