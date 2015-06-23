@@ -15,13 +15,13 @@ module.exports = ( bot ) ->
 			results.push Math.floor( Math.random() * max + 1 )#
 
 		output = from + " rolled "
-		if max is 6
-			if num is 1
+		if max == 6
+			if num == 1
 				output += "a die: "
 			else
 				output += "#{num} dice: "
 		else
-			if num is 1
+			if num == 1
 				output += "a d#{max}: "
 			else
 				output += "#{num} d#{max}s: "

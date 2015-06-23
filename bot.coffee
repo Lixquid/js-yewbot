@@ -101,7 +101,7 @@ class YewBot
 			callback( who, reason, from )
 
 	listen: ( regex, callback ) ->
-		if typeof regex is "function"
+		if typeof regex == "function"
 			@irc.on "message#", ( from, _, text ) ->
 				regex( from, text )
 		else
@@ -118,7 +118,7 @@ class YewBot
 					callback( from, match )
 
 	pm: ( regex, callback ) ->
-		if typeof regex is "function"
+		if typeof regex == "function"
 			@irc.on "pm", ( from, text ) ->
 				callback( from, text )
 		else
