@@ -6,6 +6,7 @@
     "start": "node-dev index.js"
   },
   "dependencies": {
+    "cleverbot-node": "^0.1.8",
     "coffee-script": "^1.9.3",
     "irc": "^0.3.12",
     "sqlite3": "^3.0.8"
