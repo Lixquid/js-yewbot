@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "start": "node-dev index.js"
+    "start": "node-dev index.js",
+    "server": "ircdjs",
+    "repl": "coffee tools/repl.coffee"
   },
   "dependencies": {
     "cleverbot-node": "^0.1.8",
